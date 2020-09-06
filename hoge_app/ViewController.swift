@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         //vc.modalPresentationStyle = .fullScreen
         //self.present(vc, animated: true, completion: nil)
         print(self.navigationController)
-        self.navigationController?.pushViewController(vc, animated: false)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func tappedDoubleUp(_ sender:UIButton) {
@@ -73,4 +73,3 @@ class ViewController: UIViewController {
     }
 
 }
-
