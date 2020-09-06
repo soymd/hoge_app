@@ -14,6 +14,7 @@
 		85C996BB2504A38300218008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C996B92504A38300218008 /* LaunchScreen.storyboard */; };
 		85C996C62504A38300218008 /* hoge_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C996C52504A38300218008 /* hoge_appTests.swift */; };
 		85C996D12504A38300218008 /* hoge_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C996D02504A38300218008 /* hoge_appUITests.swift */; };
+		85C996DF2504A92000218008 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C996DE2504A92000218008 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		85C996CC2504A38300218008 /* hoge_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoge_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C996D02504A38300218008 /* hoge_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoge_appUITests.swift; sourceTree = "<group>"; };
 		85C996D22504A38300218008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C996DE2504A92000218008 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				85C996B72504A38300218008 /* Assets.xcassets */,
 				85C996B92504A38300218008 /* LaunchScreen.storyboard */,
 				85C996BC2504A38300218008 /* Info.plist */,
+				85C996DE2504A92000218008 /* SecondViewController.swift */,
 			);
 			path = hoge_app;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C996DF2504A92000218008 /* SecondViewController.swift in Sources */,
 				85C996B32504A37E00218008 /* ViewController.swift in Sources */,
 				85C996AF2504A37E00218008 /* AppDelegate.swift in Sources */,
 				85C996B12504A37E00218008 /* SceneDelegate.swift in Sources */,
