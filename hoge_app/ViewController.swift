@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var countText : UITextView = UITextView()
+    var count:Int = 1
     
    
     override func viewDidLoad() {
@@ -29,7 +31,31 @@ class ViewController: UIViewController {
         
         transitionBtn.backgroundColor = UIColor.blue
         transitionBtn.addTarget(self, action: #selector(onTappedPush(_:)), for: .touchUpInside)
+        
+        
+        let doubleUpBtn = UIButton()
+        doubleUpBtn.frame = CGRect(
+            x: viewWidth * 0.1,
+            y: viewHeight * 0.1,
+            width: viewWidth * 0.2,
+            height: viewHeight * 0.1
+        )
+        doubleUpBtn.backgroundColor = UIColor.yellow
+        doubleUpBtn.addTarget(self, action: #selector(tappedDoubleUp(_:)), for: .touchUpInside)
+        
+        countText = UITextView()
+        countText.text = String(count)
+        countText.frame = CGRect(
+            x: viewWidth * 0.5,
+            y: viewHeight * 0.5,
+            width: viewWidth * 0.3,
+            height: viewHeight * 0.1
+        )
+        
+        
         self.view.addSubview(transitionBtn)
+        self.view.addSubview(doubleUpBtn)
+        self.view.addSubview(countText)
     }
     
     @objc func onTappedPush(_ sender: UIButton) {
@@ -39,6 +65,11 @@ class ViewController: UIViewController {
         //self.present(vc, animated: true, completion: nil)
         print(self.navigationController)
         self.navigationController?.pushViewController(vc, animated: false)
+    }
+    
+    @objc func tappedDoubleUp(_ sender:UIButton) {
+        count = count * 2
+        countText.text = String(count)
     }
 
 }
