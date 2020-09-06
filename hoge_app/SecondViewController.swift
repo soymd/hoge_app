@@ -1,11 +1,3 @@
-//
-//  SecondViewController.swift
-//  hoge_app
-//
-//  Created by soymd on 2020/09/06.
-//  Copyright © 2020 soymd. All rights reserved.
-//
-
 import UIKit
 
 class SecondViewController: UIViewController {
@@ -13,5 +5,16 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         self.title = "second view"
         self.view.backgroundColor = UIColor.red
+        print("loaded")
+    }
+    
+    init() {
+        print("constructed")
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError()
+        //super.init(coder: coder)
     }
 }

@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "first view"
         let viewWidth = self.view.frame.width
         let viewHeight = self.view.frame.height
 
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.gray
         let transitionBtn = UIButton()
         transitionBtn.frame = CGRect(
             x: viewWidth * 0.2,
@@ -34,7 +35,10 @@ class ViewController: UIViewController {
     @objc func onTappedPush(_ sender: UIButton) {
         print(sender)
         let vc = SecondViewController()
-        self.present(vc, animated: true, completion: nil)
+        //vc.modalPresentationStyle = .fullScreen
+        //self.present(vc, animated: true, completion: nil)
+        print(self.navigationController)
+        self.navigationController?.pushViewController(vc, animated: false)
     }
 
 }
