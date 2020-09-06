@@ -1,0 +1,37 @@
+### OS X ###
+*.DS_Store
+
+### Xcode ###
+build/
+DerivedData/
+xcuserdata/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+*.ipa
+*.app.dSYM.zip
+
+### Concourse ###
+CI/credentials.yml
+
+### Fastlane ###
+fastlane/README.md
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/screenshots/screenshots.html
+fastlane/test_output
+
+#### Carthage ###
+Carthage/
+Cartfile.resolved
+
+### CocoaPods ###
+Pods/
+#Podfile.lock
+
+#### AppCode ####
+.idea/
+
