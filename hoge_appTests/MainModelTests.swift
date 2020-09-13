@@ -2,7 +2,7 @@ import XCTest
 @testable import hoge_app
 
 class MainModelTests:XCTestCase {
-    let subject2 = ViewController()
+    let subject2 = MainViewController()
     
     func test_doubleUp() {
         let subject = MainModel()
